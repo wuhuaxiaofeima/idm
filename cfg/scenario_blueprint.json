@@ -1,0 +1,163 @@
+{
+    "xosc": "/home/ivtest/vtd/VTD.2019.1/Data/Projects/fty/Scenarios/demo111.xosc",
+    "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "schemaLocation": "./schema/OpenSCENARIO_v0.9.1.xsd",
+    "FileHeader": {
+        "revMajor": "0",
+        "revMinor": "9",
+        "author": "leoherz_liu@163.com",
+        "description": "sample scenario"
+    },
+    "Catalogs": {
+        "Vehicle": "Distros/Current/Config/Players/Vehicles",
+        "Driver": "Distros/Current/Config/Players/driverCfg.xml",
+        "Pedestrian": "",
+        "PedestrianController": "",
+        "MiscObject": "Distros/Current/Config/Players/Objects",
+        "Environment": "",
+        "Maneuver": "",
+        "Trajectory": "",
+        "Route": ""
+    },
+    "RoadNetwork": {
+        "Logics": "Projects/fty/Databases/double/Odr/double350_5km.xodr",
+        "SceneGraph": "Projects/fty/Databases/double/Database/double350_5km.opt.osgb"
+    },
+    "Entities": {
+        "ego": {
+            "Vehicle": "ego Audi_A3_2009_red",
+            "Controller": "lcDriver"
+        },
+        "target1": {
+            "Vehicle": "target Audi_A3_2009_black",
+            "Controller": "defaultDriver"
+        },
+        "target2": {
+            "Vehicle": "target Audi_A3_2009_black",
+            "Controller": "defaultDriver"
+        }
+    },
+    "Storyboard": {
+        "ego": {
+            "Init": {
+                "speed": 30,
+                "y": 1.75,
+                "x": 100,
+                "z": 0,
+                "h": 0,
+                "p": 0,
+                "r": 0
+            },
+            "Destination":{
+                "y": 1.75,
+                "x": 5000,
+                "z": 0,
+                "h": 0,
+                "p": 0,
+                "r": 0
+            }
+        },
+        "target1": {
+            "Init": {
+                "speed": 20,
+                "y": 1.75,
+                "x": 0,
+                "z": 0,
+                "h": 0,
+                "p": 0,
+                "r": 0
+            }
+        },
+        "target2": {
+            "Init": {
+                "speed": 0,
+                "y": -1.75,
+                "x": 0,
+                "z": 0,
+                "h": 0,
+                "p": 0,
+                "r": 0
+            }
+        }
+    },
+    "Vehicles": {
+        "ego Audi_A3_2009_red": {
+            "category": "car",
+            "name": "Audi_A3_2009_black",
+            "mass": "1560",
+            "maxDeceleration": "9.5",
+            "maxSpeed": "58.4",
+            "control": "external",
+            "BoundingBox": {
+                "x": "1.317",
+                "y": "0",
+                "z": "0.7115",
+                "height": "1.423",
+                "length": "4.3",
+                "width": "1.776"
+            },
+            "FrontAxle": {
+                "maxSteering": "0.48",
+                "positionX": "2.591",
+                "positionZ": "0.3205",
+                "trackWidth": "1.576",
+                "wheelDiameter": "0.641"
+            },
+            "RearAxle": {
+                "maxSteering": "0.48",
+                "positionX": "2.591",
+                "positionZ": "0.3205",
+                "trackWidth": "1.576",
+                "wheelDiameter": "0.641"
+            }
+        },
+        "target Audi_A3_2009_black": {
+            "category": "car",
+            "name": "Audi_A3_2009_black",
+            "mass": "1560",
+            "maxDeceleration": "9.5",
+            "maxSpeed": "58.4",
+            "control": "internal",
+            "BoundingBox": {
+                "x": "1.317",
+                "y": "0",
+                "z": "0.7115",
+                "height": "1.423",
+                "length": "4.3",
+                "width": "1.776"
+            },
+            "FrontAxle": {
+                "maxSteering": "0.48",
+                "positionX": "2.591",
+                "positionZ": "0.3205",
+                "trackWidth": "1.576",
+                "wheelDiameter": "0.641"
+            },
+            "RearAxle": {
+                "maxSteering": "0.48",
+                "positionX": "2.591",
+                "positionZ": "0.3205",
+                "trackWidth": "1.576",
+                "wheelDiameter": "0.641"
+            }
+        }
+    },
+    "Controller": {
+        "defaultDriver": {
+            "name": "DefaultDriver",
+            "age": "28",
+            "eyeDistance": "0.065",
+            "height": "1.8",
+            "sex": "male",
+            "weight": "60"
+        },
+        "lcDriver": {
+            "name": "LCDriver",
+            "age": "28",
+            "eyeDistance": "0.065",
+            "height": "1.8",
+            "sex": "male",
+            "weight": "60"
+        }
+    }
+}

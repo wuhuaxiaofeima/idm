@@ -1,0 +1,22 @@
+
+{
+    "frequency": 60,
+    "integration_update_period": 30,
+    "kp_steer": 2,
+    "ki_steer": 0.2,
+    "kd_steer": 0,
+    "deadzone_steer": 0,
+    "max_steer": 30,
+    "kp_throttle": 0.1,
+    "ki_throttle": 0.1,
+    "kd_throttle": 0,
+    "deadzone_throttle": 0,
+    "max_throttle": 1,
+    "kp_brake": 0.05,
+    "ki_brake": 0.05,
+    "kd_brake": 0,
+    "deadzone_brake": 0,
+    "max_brake": 1,
+    "deadzone_speed_error": 0,
+    "deadzone_steer_error": 0
+  }

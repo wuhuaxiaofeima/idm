@@ -1,0 +1,27 @@
+{
+    "ZCM_URL":"udpm://239.255.76.78:7678?ttl=0",
+    "DEMO_FILE_PATH":"\"/home/ivtest/vtd/VTD.2019.1/Data/Projects/fty/Scenarios/demo111.xosc\"",
+    "RECORD_PATH":"../record/",
+    "RECORD_FILENAME":"0520_vtd_6para_1.csv",
+    "PID_PARAMETER_PATH":"../cfg/pid_parameters.json",
+
+
+    "PARA_NUM":6,
+    
+    "PARA_NAME":["s1","v2"],
+    "PARA_BOTTOM":[110,10],
+    "PARA_TOP":[210,30],
+    "PARA_PRECISION":[51,51],
+    "PARA_UNIT":[1,1],
+
+    "6PARA_NAME":["s1","v1","s2","v2","dec_last_time","dec_start_time"],
+    "6PARA_BOTTOM":[110,20, 50,15,1,3],
+    "6PARA_TOP":   [210,30,150,25,3,9],
+    "6PARA_PRECISION":[5,5, 5,  5,3, 3,3],
+    "6PARA_UNIT":[1,1,1,1,1,1,1],
+    
+    "PARTICLES_NUM":10,
+    "SINGLE_TEST_TURN":400,
+    "REPEAT_TIMES":1,
+    "CONNECT_TIEV":false
+}

@@ -1,0 +1,2 @@
+/usr/bin/ar qc librdb_handler.a CMakeFiles/rdb_handler.dir/RDBHandler.cc.o
+/usr/bin/ranlib librdb_handler.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpid_controller.a CMakeFiles/pid_controller.dir/PIDController.cpp.o
+/usr/bin/ranlib libpid_controller.a
